@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Survey Malanda</title>
+</head>
+<body>
+	<h1 id="title">MalandaCS Survey</h1>
+	<p id="description">Please tell about your experience with us.</p>
+	<form id="survey-form">
+		<label id="name-label">Name:</label>
+		<input type="text" name="name" id="name" placeholder="Enter your name" required>
+		<label id="email-label">Email:</label>
+		<input type="email" name="email" id="email" placeholder="Enter your email" required>
+		<label id="number-label">Age (optional):</label>
+		<input type="number" name="age" id="number" min="13" max="110" placeholder="Age">
+		<label>How satisfied are you with our services?</label>
+		<select name="referrer" id="dropdown">
+    		<option value="">(Select one)</option>
+			<option value="1">Very satisfied</option>
+			<option value="2">Satisfied</option>
+			<option value="3">Moderate</option>
+			<option value="4">Unsatisfied</option>
+			<option value="5">Very unsatisfied</option>
+		</select>
+		<label>How satisfied are you with our services?</label>
+		<label><input type="radio" name="opt" class="inline" value="11">Definitely</label>
+		<label><input type="radio" name="opt" class="inline" value="22">Maybe</label>
+		<label><input type="radio" name="opt" class="inline" value="33">Not sure</label>
+		<label>What would you like to see improved? (Check all that apply)</label>
+		<label><input type="checkbox" name="serv" value="111" class="inline">Customer Service</label>
+		<label><input type="checkbox" name="serv" value="222" class="inline">Troubleshooting</label>
+		<label><input type="checkbox" name="serv" value="333" class="inline">Web Design</label>
+		<label><input type="checkbox" name="serv" value="44" class="inline">Responsivity</label>
+		<label>Add comments:
+			<textarea name="comments" rows="4" cols="30" placeholder="Write your comment here"></textarea>
+        </label>
+		<input id="submit" type="submit" value="Submit">
+	</form>
+</body>
+</html>
